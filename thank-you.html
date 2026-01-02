@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're In! 🎉 - CreatorKit AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .emoji {
+            font-size: 4rem;
+            margin: 30px 0;
+        }
+        .next-steps {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .next-steps li {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            background: #F59E0B;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">✨🎯🚀</div>
+        <h1>Welcome to the Waitlist!</h1>
+        
+        <p>You're officially on the list for <strong>CreatorKit AI</strong>. We'll notify you as soon as we launch with your <strong>1 MONTH FREE</strong> coupon.</p>
+        
+        <div class="next-steps">
+            <h3>What happens next:</h3>
+            <ol>
+                <li>📧 You'll receive a confirmation email shortly</li>
+                <li>🛠️ We're building the final features based on community feedback</li>
+                <li>🎁 You'll get early access + special discount before public launch</li>
+                <li>📱 Follow <a href="#" style="color: #F59E0B;">@creatorkit_ai</a> on Twitter for updates</li>
+            </ol>
+        </div>
+        
+        <p><strong>Position in line:</strong> #<span id="position">Calculating...</span></p>
+        
+        <a href="index.html" class="button">← Back to homepage</a>
+        
+        <p style="margin-top: 40px; font-size: 0.9rem; opacity: 0.7;">
+            Need help? Reply to our confirmation email<br>
+            Unsubscribe anytime
+        </p>
+    </div>
+
+    <script>
+        // Simple counter based on time
+        const startCount = 127;
+        const now = new Date();
+        const position = startCount + Math.floor(now.getMinutes() / 2);
+        document.getElementById('position').textContent = position;
+    </script>
+</body>
+</html>

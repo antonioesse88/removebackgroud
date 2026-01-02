@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorKit AI - All-in-One Toolkit for Content Creators</title>
+    <style>
+        /* RESET AND FONTS */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+            line-height: 1.6;
+        }
+        
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* HEADER */
+        header {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #6366F1;
+            margin-bottom: 10px;
+        }
+        .logo span {
+            background: linear-gradient(90deg, #6366F1, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 40px 0 60px;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            color: #64748B;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #FDE68A 0%, #F59E0B 100%);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        /* EMAIL FORM */
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto 50px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .email-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 16px 20px;
+            border: 2px solid #E2E8F0;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .email-input:focus {
+            outline: none;
+            border-color: #6366F1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+        }
+        
+        /* FEATURES */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #6366F1;
+        }
+        
+        /* TESTIMONIAL */
+        .testimonial {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .testimonial p {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 60px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #6366F1;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #64748B;
+            border-top: 1px solid #E2E8F0;
+            margin-top: 40px;
+        }
+        
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .email-form { flex-direction: column; }
+            .email-input { min-width: 100%; }
+            .cta-button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">✨ <span>CreatorKit AI</span></div>
+            <p>The all-in-one toolkit for smart creators</p>
+        </header>
+        
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Stop wasting time on <span class="highlight">tedious tasks</span></h1>
+            <p>Transcribe videos, remove watermarks, and create viral titles — all with AI. Focus on creativity, we handle the rest.</p>
+            
+            <!-- EMAIL FORM -->
+            <form action="https://formspree.io/f/xkograzz" method="POST" class="email-form">
+                <input type="email" name="email" class="email-input" placeholder="your@email.com" required>
+                <button type="submit" class="cta-button">🎯 Get 1 MONTH FREE</button>
+            </form>
+            <p><small>Join the waitlist. No spam, promise! ✨</small></p>
+        </section>
+        
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎬</div>
+                <h3>Video Transcription → Subtitles</h3>
+                <p>Upload a video and get ready-to-use subtitles in 2 minutes. 50+ languages supported, easy editing.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🖼️</div>
+                <h3>Watermark & Object Removal</h3>
+                <p>Remove logos, text, or unwanted objects from your images with one click. Clean, AI-powered results.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Clickable Title Generator</h3>
+                <p>AI creates optimized titles for YouTube, blogs, and social media — maximize your views and clicks.</p>
+            </div>
+        </section>
+        
+        <!-- TESTIMONIAL -->
+        <section class="testimonial">
+            <p>"I used to waste 3 hours on subtitles. With CreatorKit, I'm done in 10 minutes. Game-changer for creators!"</p>
+            <p><strong>— Alex, YouTuber (50k subscribers)</strong></p>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="faq">
+            <h2>❔ Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>🌍 What languages are supported?</h3>
+                <p>All features support English, Spanish, French, German, Italian, and 45+ other languages perfectly.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>💸 How much does it cost?</h3>
+                <p>Early access: <strong>$9/month</strong> for all 3 tools. Waitlist members get: <strong>1 month free</strong> at launch.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>🚀 When will it be available?</h3>
+                <p>We're finalizing the product. Join the waitlist to be among the first to access (and get the discount).</p>
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2024 <strong>CreatorKit AI</strong> — Made with ❤️ for content creators worldwide</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">No credit card required. Cancel anytime.</p>
+        </footer>
+    </div>
+
+    <!-- FORMSPREE SCRIPT -->
+    <script>
+        document.querySelector('form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const button = form.querySelector('.cta-button');
+            const originalText = button.textContent;
+            
+            // Show loading
+            button.textContent = 'Processing...';
+            button.disabled = true;
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    // Success
+                    button.textContent = '✅ Subscribed! Check your email';
+                    form.reset();
+                    
+                    // Redirect to thank you page
+                    setTimeout(() => {
+                        window.location.href = "thank-you.html";
+                    }, 2000);
+                } else {
+                    button.textContent = '❌ Please try again';
+                    button.disabled = false;
+                }
+            } catch (error) {
+                button.textContent = '❌ Connection error';
+                button.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
